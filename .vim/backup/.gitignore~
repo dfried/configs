@@ -16,6 +16,3 @@
 .swp
 .tilemill
 .vegas
-.viminfo
-.vim/backup/*
-.vim/tmp/*

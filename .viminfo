@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/color
+~MSle0~/showmatch
 
 # Last Substitute Search Pattern:
 ~MSle0&album
@@ -17,14 +17,16 @@
 $
 
 # Command Line History (newest to oldest):
-:q
-:qw
 :wq
+:q
 :w
+:w!
+:qw
 :sp ~/.bash_profile
 :%s/album/project/g
 
 # Search String History (newest to oldest):
+?/showmatch
 ?/color
 ?/assets
 ?/sass
@@ -40,7 +42,7 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
+"0	LINE	0
 		branch = auto
 "1	LINE	0
 	
@@ -60,27 +62,33 @@ $
 	<<<<<<< HEAD
 "9	LINE	0
 	'\e[5C': forward-word
-"-	CHAR	0
-	albums_path 
+""-	CHAR	0
+	u
 
 # File marks:
-'0  1  0  ~/.vimrc
-'1  1  0  ~/.vegas/resque_web/resque_web.url
-'2  1  0  ~/.inputrc
-'3  1  0  ~/.bash_profile
-'4  1  0  ~/.viminfo
-'5  1  0  ~/.swp
-'6  1  0  ~/.tilemill/.rvmrc
-'7  1  0  ~/.tilemill/config.json
-'8  1  0  ~/.netrc
-'9  1  0  ~/.irb-history
+'0  21  9  ~/.gitignore
+'1  19  0  ~/.gitignore
+'2  1  0  ~/.viminfo
+'3  1  0  ~/.vimrc
+'4  25  4  ~/.vimrc
+'5  23  11  ~/.vimrc
+'6  1  0  ~/.vegas/resque_web/resque_web.url
+'7  1  0  ~/.inputrc
+'8  1  0  ~/.bash_profile
+'9  1  0  ~/.swp
 
 # Jumplist (newest first):
+-'  21  9  ~/.gitignore
+-'  1  0  ~/.gitignore
+-'  19  0  ~/.gitignore
+-'  1  0  ~/.viminfo
 -'  1  0  ~/.vimrc
+-'  25  4  ~/.vimrc
+-'  23  11  ~/.vimrc
+-'  14  1  ~/.vimrc
 -'  1  0  ~/.vegas/resque_web/resque_web.url
 -'  1  0  ~/.inputrc
 -'  1  0  ~/.bash_profile
--'  1  0  ~/.viminfo
 -'  1  0  ~/.swp
 -'  1  0  ~/.tilemill/.rvmrc
 -'  1  0  ~/.tilemill/config.json
@@ -93,7 +101,6 @@ $
 -'  8  0  ~/.cups
 -'  1  0  ~/.CFUserTextEncoding
 -'  2  2  ~/.gitignore
--'  1  0  ~/.gitignore
 -'  1  0  ~/.bash_history
 -'  9  0  ~/.gitconfig
 -'  56  1  ~/.gitconfig
@@ -169,16 +176,60 @@ $
 -'  1  0  ~/Sites/snapshare/app/views/projects/index.html.erb
 -'  5  27  ~/Sites/snapshare/app/views/projects/edit.html.erb
 -'  1  0  ~/Sites/snapshare/app/views/projects/edit.html.erb
--'  10  10  ~/Sites/snapshare/app/views/projects/_form.html.erb
--'  1  0  ~/Sites/snapshare/app/views/projects/_form.html.erb
--'  11  66  ~/Sites/snapshare/app/views/projects/_project.html.erb
--'  1  0  ~/Sites/snapshare/app/views/projects/_project.html.erb
--'  693  0  ~/.rvm/gems/ruby-1.9.3-p194/gems/mysql2-0.3.11/ext/mysql2/mkmf.log
 
 # History of marks within files (newest to oldest):
 
+> ~/.gitignore
+	"	21	9
+	^	21	10
+	.	21	9
+	+	1	0
+	+	2	2
+	+	5	0
+	+	7	12
+	+	17	9
+	+	4	8
+	+	3	4
+	+	22	0
+	+	18	5
+	+	19	0
+	+	21	9
+
+> ~/.viminfo
+	"	1	0
+
 > ~/.vimrc
 	"	1	0
+	^	25	5
+	.	25	4
+	+	4	0
+	+	5	0
+	+	1	1
+	+	42	0
+	+	40	0
+	+	45	0
+	+	34	16
+	+	14	13
+	+	49	0
+	+	30	0
+	+	30	0
+	+	39	13
+	+	23	11
+	+	14	0
+	+	13	11
+	+	14	24
+	+	25	14
+	+	26	9
+	+	26	11
+	+	29	19
+	+	43	21
+	+	20	12
+	+	36	0
+	+	53	0
+	+	18	14
+	+	24	0
+	+	14	7
+	+	25	4
 
 > ~/.vegas/resque_web/resque_web.url
 	"	1	0
@@ -200,9 +251,6 @@ $
 	+	6	1
 	+	2	0
 	+	8	0
-
-> ~/.viminfo
-	"	1	0
 
 > ~/.swp
 	"	1	0
@@ -230,13 +278,6 @@ $
 
 > ~/.CFUserTextEncoding
 	"	1	0
-
-> ~/.gitignore
-	"	2	2
-	^	2	3
-	.	2	2
-	+	1	0
-	+	2	2
 
 > ~/.bash_history
 	"	1	0
