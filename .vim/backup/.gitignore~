@@ -8,6 +8,7 @@
 .cups
 .dropbox
 .gem
+.gitk
 .irb-history
 .netrc
 .npm
@@ -16,3 +17,10 @@
 .swp
 .tilemill
 .vegas
+.viminfo
+.vim/backup/*
+.vim/tmp/*
+.Xauthority
+.fontconfig/
+.wireshark-etc/
+.wireshark/

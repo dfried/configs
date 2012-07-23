@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/showmatch
+~MSle0~/syntax enable
 
 # Last Substitute Search Pattern:
 ~MSle0&album
@@ -26,6 +26,15 @@ $
 :%s/album/project/g
 
 # Search String History (newest to oldest):
+?/syntax enable
+?/<<<
+?/<<
+?/>>
+?/====
+?/===
+?/==
+?/d
+?/app
 ?/showmatch
 ?/color
 ?/assets
@@ -42,194 +51,542 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-		branch = auto
+""0	CHAR	0
+	" 
 "1	LINE	0
 	
 "2	LINE	0
-		branch = auto
+	>>>>>>> 58a31ef... WIP conference calling
 "3	LINE	0
-		status = auto
+	
 "4	LINE	0
-		diff = auto
+	#gem 'twilio-ruby','~> 3.7.0',:git => 'git@github.com:dfried/twilio-ruby.git', :branch => 'master'
 "5	LINE	0
-	>>>>>>> WIP conference calling
-"6	LINE	0
-	        #delete temp
-"7	LINE	0
 	=======
-"8	LINE	0
+"6	LINE	0
+	gem 'twilio-ruby','~> 3.4.0'
+"7	LINE	0
 	<<<<<<< HEAD
+"8	LINE	0
+	WIP conference calling
 "9	LINE	0
-	'\e[5C': forward-word
-""-	CHAR	0
-	u
+	
+"-	CHAR	0
+	" 
 
 # File marks:
-'0  21  9  ~/.gitignore
-'1  19  0  ~/.gitignore
-'2  1  0  ~/.viminfo
-'3  1  0  ~/.vimrc
-'4  25  4  ~/.vimrc
-'5  23  11  ~/.vimrc
-'6  1  0  ~/.vegas/resque_web/resque_web.url
-'7  1  0  ~/.inputrc
-'8  1  0  ~/.bash_profile
-'9  1  0  ~/.swp
+'0  21  10  ~/.gitignore
+'1  27  0  ~/.gitignore
+'2  6  0  ~/.config/fish/fishd.Daniels-MacBook-Air.local
+'3  47  20  ~/.vimrc
+'4  15  3  ~/.gitignore
+'5  11  4  ~/.gitignore
+'6  1  0  ~/.vimrc
+'7  6  31  ~/Sites/lua-new/app/models/conference.rb
+'8  1  0  ~/Sites/lua-new/.git/COMMIT_EDITMSG
+'9  1  0  ~/Sites/lua-new/Gemfile.lock
 
 # Jumplist (newest first):
--'  21  9  ~/.gitignore
+-'  21  10  ~/.gitignore
 -'  1  0  ~/.gitignore
--'  19  0  ~/.gitignore
--'  1  0  ~/.viminfo
+-'  27  0  ~/.gitignore
+-'  6  0  ~/.config/fish/fishd.Daniels-MacBook-Air.local
+-'  7  0  ~/.config/NERD_tree_2
+-'  1  0  ~/.config/NERD_tree_2
+-'  7  2  ~/.config/NERD_tree_1
+-'  1  0  ~/.config/NERD_tree_1
+-'  47  20  ~/.vimrc
+-'  2  0  ~/.vimrc
 -'  1  0  ~/.vimrc
--'  25  4  ~/.vimrc
--'  23  11  ~/.vimrc
--'  14  1  ~/.vimrc
--'  1  0  ~/.vegas/resque_web/resque_web.url
--'  1  0  ~/.inputrc
--'  1  0  ~/.bash_profile
--'  1  0  ~/.swp
--'  1  0  ~/.tilemill/.rvmrc
--'  1  0  ~/.tilemill/config.json
--'  1  0  ~/.netrc
--'  1  0  ~/.irb-history
--'  1  0  ~/.gvimrc
--'  1  0  ~/.gitk
--'  1  0  ~/.cups/lpoptions
--'  9  0  ~/.cups
--'  8  0  ~/.cups
--'  1  0  ~/.CFUserTextEncoding
--'  2  2  ~/.gitignore
--'  1  0  ~/.bash_history
--'  9  0  ~/.gitconfig
--'  56  1  ~/.gitconfig
--'  46  0  ~/.gitconfig
--'  47  18  ~/.gitconfig
--'  1  0  ~/.gitconfig
+-'  15  3  ~/.gitignore
+-'  11  4  ~/.gitignore
+-'  6  31  ~/Sites/lua-new/app/models/conference.rb
+-'  1  0  ~/Sites/lua-new/app/models/conference.rb
+-'  1  0  ~/Sites/lua-new/.git/COMMIT_EDITMSG
+-'  1  0  ~/Sites/lua-new/Gemfile.lock
+-'  33  0  ~/Sites/lua-new/Gemfile
 -'  1  0  ~/Sites/lua-new/Gemfile
--'  12  8  ~/Sites/lua-new/app/assets/javascripts/application/ujs/preloader.coffee
--'  1  0  ~/Sites/lua-new/app/assets/javascripts/application/ujs/preloader.coffee
--'  17  0  ~/.inputrc
--'  10  0  ~/.inputrc
--'  16  5  ~/.inputrc
--'  1  0  ~/.bashrc
--'  1  0  ~/.bash_login
--'  8  0  ~/Sites/lua/.git
--'  4  0  ~/.bash_profile
--'  693  0  ~/.rvm/gems/ruby-1.9.3-p194/gems/mysql2-0.3.11/ext/mysql2/mkmf.log
--'  1  0  ~/.rvm/gems/ruby-1.9.3-p194/gems/mysql2-0.3.11/ext/mysql2/mkmf.log
--'  28  7  ~/Sites/rugbee/Gemfile
--'  58  0  ~/Sites/rugbee/Gemfile
--'  8  0  ~/Sites/rugbee/Gemfile
--'  1  0  ~/Sites/rugbee/Gemfile
--'  32  0  ~/Sites/rugbee/Gemfile
--'  27  37  ~/Sites/rugbee/Gemfile
--'  57  0  ~/Sites/rugbee/Gemfile
--'  10  0  ~/Sites/rugbee/Gemfile
--'  62  0  ~/Sites/rugbee/Gemfile
--'  1  0  ~/Sites/rugbee/Gem
--'  29  19  ~/Sites/rugbee/Gemfile
--'  2  0  ~/Sites/rugbee/Gemfile
--'  12  13  ~/Sites/rugbee/Gemfile
--'  4  16  ~/Sites/rugbee/Gemfile
--'  6  0  ~/Sites/snapshare/app/views/projects/show.html.erb
--'  1  0  ~/Sites/snapshare/app/views/projects/show.html.erb
--'  3  27  ~/Sites/snapshare/app/views/projects/new.html.erb
--'  1  0  ~/Sites/snapshare/app/views/projects/new.html.erb
--'  7  37  ~/Sites/snapshare/app/views/projects/index.html.erb
--'  2  14  ~/Sites/snapshare/app/views/projects/index.html.erb
--'  5  5  ~/Sites/snapshare/app/views/projects/index.html.erb
--'  1  0  ~/Sites/snapshare/app/views/projects/index.html.erb
--'  5  27  ~/Sites/snapshare/app/views/projects/edit.html.erb
--'  1  0  ~/Sites/snapshare/app/views/projects/edit.html.erb
--'  10  10  ~/Sites/snapshare/app/views/projects/_form.html.erb
--'  1  0  ~/Sites/snapshare/app/views/projects/_form.html.erb
--'  11  66  ~/Sites/snapshare/app/views/projects/_project.html.erb
--'  1  0  ~/Sites/snapshare/app/views/projects/_project.html.erb
--'  7  1  ~/.bash_profile
--'  11  66  ~/Sites/snapshare/app/views/projects/_project.html.erb
--'  1  0  ~/Sites/snapshare/app/views/projects/_project.html.erb
--'  10  10  ~/Sites/snapshare/app/views/projects/_form.html.erb
--'  1  0  ~/Sites/snapshare/app/views/projects/_form.html.erb
--'  11  66  ~/Sites/snapshare/app/views/projects/_project.html.erb
--'  1  0  ~/Sites/snapshare/app/views/projects/_project.html.erb
--'  11  66  ~/Sites/snapshare/app/views/projects/_project.html.erb
--'  1  0  ~/Sites/snapshare/app/views/projects/_project.html.erb
--'  5  27  ~/Sites/snapshare/app/views/projects/edit.html.erb
--'  1  0  ~/Sites/snapshare/app/views/projects/edit.html.erb
--'  10  10  ~/Sites/snapshare/app/views/projects/_form.html.erb
--'  1  0  ~/Sites/snapshare/app/views/projects/_form.html.erb
--'  11  66  ~/Sites/snapshare/app/views/projects/_project.html.erb
--'  1  0  ~/Sites/snapshare/app/views/projects/_project.html.erb
--'  11  66  ~/Sites/snapshare/app/views/projects/_project.html.erb
--'  1  0  ~/Sites/snapshare/app/views/projects/_project.html.erb
--'  10  10  ~/Sites/snapshare/app/views/projects/_form.html.erb
--'  1  0  ~/Sites/snapshare/app/views/projects/_form.html.erb
--'  11  66  ~/Sites/snapshare/app/views/projects/_project.html.erb
--'  1  0  ~/Sites/snapshare/app/views/projects/_project.html.erb
--'  11  66  ~/Sites/snapshare/app/views/projects/_project.html.erb
--'  1  0  ~/Sites/snapshare/app/views/projects/_project.html.erb
--'  7  37  ~/Sites/snapshare/app/views/projects/index.html.erb
--'  2  14  ~/Sites/snapshare/app/views/projects/index.html.erb
--'  5  5  ~/Sites/snapshare/app/views/projects/index.html.erb
--'  1  0  ~/Sites/snapshare/app/views/projects/index.html.erb
--'  5  27  ~/Sites/snapshare/app/views/projects/edit.html.erb
--'  1  0  ~/Sites/snapshare/app/views/projects/edit.html.erb
+-'  1  0  ~/Sites/lua-new/.git/rebase-merge/git-rebase-todo
+-'  2  0  ~/Sites/lua-new/.git/COMMIT_EDITMSG
+-'  104  2  ~/Sites/lua-new/app/models/conference.rb
+-'  28  0  ~/Sites/lua-new/app/models/conference.rb
+-'  1  0  ~/Sites/lua-new/app/views/conferences/show.html.haml
+-'  115  0  ~/Sites/lua-new/config/routes.rb
+-'  1  0  ~/Sites/lua-new/config/routes.rb
+-'  1  0  ~/Sites/lua-new/config.ru
+-'  181  4  ~/Sites/lua-new/config/routes.rb
+-'  18  0  ~/Sites/lua-new/config/routes.rb
+-'  78  0  ~/Sites/lua-new/config/routes.rb
+-'  2  0  ~/Sites/lua-new/config/routes.rb
+-'  175  4  ~/Sites/lua-new/config/routes.rb
+-'  74  0  ~/Sites/lua-new/config/routes.rb
+-'  3  4  ~/Sites/lua-new/app/views/conferences/new.html.haml
+-'  1  0  ~/Sites/lua-new/app/views/conferences/new.html.haml
+-'  94  2  ~/Sites/lua-new/app/models/conference.rb
+-'  32  4  ~/Sites/lua-new/app/models/conference.rb
+-'  27  4  ~/Sites/lua-new/app/models/conference.rb
+-'  6  2  ~/Sites/lua-new/app/models/profile.rb
+-'  1  0  ~/Sites/lua-new/app/models/profile.rb
+-'  78  2  ~/Sites/lua-new/app/models/conference.rb
+-'  10  2  ~/Sites/lua-new/app/models/conference.rb
+-'  180  5  ~/Sites/lua-new/.git/rebase-merge/git-rebase-todo
+-'  93  5  ~/Sites/lua-new/.git/rebase-merge/git-rebase-todo
+-'  60  5  ~/Sites/lua-new/.git/rebase-merge/git-rebase-todo
+-'  61  5  ~/Sites/lua-new/.git/rebase-merge/git-rebase-todo
+-'  57  5  ~/Sites/lua-new/.git/rebase-merge/git-rebase-todo
+-'  17  5  ~/Sites/lua-new/.git/rebase-merge/git-rebase-todo
+-'  18  5  ~/Sites/lua-new/.git/rebase-merge/git-rebase-todo
+-'  2  4  ~/Sites/lua-new/.git/rebase-merge/git-rebase-todo
+-'  165  6  ~/Sites/lua-new/.git/rebase-merge/git-rebase-todo
+-'  123  5  ~/Sites/lua-new/.git/rebase-merge/git-rebase-todo
+-'  118  5  ~/Sites/lua-new/.git/rebase-merge/git-rebase-todo
+-'  113  4  ~/Sites/lua-new/.git/rebase-merge/git-rebase-todo
+-'  14  2  ~/Sites/lua-new/app/models/conference.rb
+-'  13  2  ~/Sites/lua-new/app/models/conference.rb
+-'  12  2  ~/Sites/lua-new/app/models/conference.rb
+-'  11  2  ~/Sites/lua-new/app/models/conference.rb
+-'  102  0  ~/Sites/lua-new/config/routes.rb
+-'  164  4  ~/Sites/lua-new/config/routes.rb
+-'  5  0  ~/Sites/lua-new/config/routes.rb
+-'  6  4  ~/Sites/lua-new/config/routes.rb
+-'  157  4  ~/Sites/lua-new/config/routes.rb
+-'  61  0  ~/Sites/lua-new/config/routes.rb
+-'  2  4  ~/Sites/lua-new/app/views/conferences/new.html.haml
+-'  5  0  ~/Sites/lua-new/app/models/profile.rb
+-'  78  2  ~/Sites/lua-new/lib/seeds/projects.rb
+-'  1  0  ~/Sites/lua-new/lib/seeds/projects.rb
+-'  27  0  ~/Sites/lua-new/lib/seeds/users.rb
+-'  1  0  ~/Sites/lua-new/lib/seeds/users.rb
+-'  143  5  ~/Sites/lua-new/.git/rebase-merge/git-rebase-todo
+-'  144  6  ~/Sites/lua-new/.git/rebase-merge/git-rebase-todo
+-'  36  5  ~/Sites/lua-new/.git/rebase-merge/git-rebase-todo
+-'  56  0  ~/Sites/lua-new/app/controllers/conferences_controller.rb
+-'  13  0  ~/Sites/lua-new/app/controllers/conferences_controller.rb
+-'  1  0  ~/Sites/lua-new/app/controllers/conferences_controller.rb
+-'  26  0  ~/Sites/lua-new/lib/seeds/users.rb
+-'  22  5  ~/Sites/lua-new/.git/rebase-merge/git-rebase-todo
+-'  177  6  ~/Sites/lua-new/.git/rebase-merge/git-rebase-todo
+-'  132  5  ~/Sites/lua-new/.git/rebase-merge/git-rebase-todo
+-'  8  39  ~/Sites/lua-new/.git/rebase-merge/git-rebase-todo
+-'  4  39  ~/Sites/lua-new/.git/rebase-merge/git-rebase-todo
+-'  1  0  ~/Sites/lua-new/Procfile.local
+-'  16  0  ~/.gitconfig
+-'  1  0  ~/.gitconfig
+-'  40  0  ~/Sites/lua-new/.gitignore
+-'  38  0  ~/Sites/lua-new/.gitignore
+-'  1  0  ~/Sites/lua-new/.gitignore
+-'  7  0  ~/Sites/lua-new/app/views/shared/templates/_conference_calling.html.haml
+-'  1  0  ~/Sites/lua-new/app/views/shared/templates/_conference_calling.html.haml
+-'  1  0  /usr/local/.git/description
+-'  23  9  ~/.gitignore
+-'  20  0  ~/.gitignore
+-'  1  0  ~/.viminfo
+-'  26  4  ~/.vimrc
+-'  24  11  ~/.vimrc
+-'  15  1  ~/.vimrc
+-'  1  0  ~/.vegas/resque_web/resque_web.url
+-'  6  0  ~/.config/fish/fishd.Daniels-MacBook-Air.local
 
 # History of marks within files (newest to oldest):
 
 > ~/.gitignore
-	"	21	9
-	^	21	10
-	.	21	9
+	"	21	10
+	^	21	11
+	.	21	10
 	+	1	0
 	+	2	2
 	+	5	0
 	+	7	12
-	+	17	9
+	+	18	9
 	+	4	8
 	+	3	4
-	+	22	0
-	+	18	5
+	+	28	0
+	+	19	5
+	+	20	0
+	+	23	9
+	+	11	4
+	+	12	0
+	+	27	2
+	+	24	0
+	+	25	0
+	+	26	0
+	+	27	0
+	+	21	10
+
+> ~/.config/NERD_tree_1
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.config/NERD_tree_2
+	"	7	0
+	.	1	0
+	+	1	0
+
+> ~/.config/fish/fishd.Daniels-MacBook-Air.local
+	"	6	0
+
+> ~/.vimrc
+	"	47	20
+	^	47	21
+	.	47	20
+	+	5	0
+	+	6	0
+	+	2	1
+	+	43	0
+	+	41	0
+	+	48	0
+	+	35	16
+	+	15	13
+	+	52	0
+	+	31	0
+	+	31	0
+	+	40	13
+	+	24	11
+	+	15	0
+	+	14	11
+	+	15	24
+	+	26	14
+	+	27	9
+	+	27	11
+	+	30	19
+	+	44	21
+	+	21	12
+	+	37	0
+	+	56	0
+	+	19	14
+	+	25	0
+	+	15	7
+	+	26	4
+	+	1	0
+	+	45	0
+	+	47	20
+
+> ~/Sites/lua-new/app/models/conference.rb
+	"	6	31
+	^	6	32
+	.	6	31
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	11	0
+	+	10	0
+	+	12	0
+	+	10	0
+	+	13	0
+	+	10	0
+	+	14	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
 	+	19	0
-	+	21	9
+	+	25	0
+	+	28	0
+	+	28	0
+	+	33	0
+	+	78	0
+	+	19	0
+	+	27	0
+	+	31	0
+	+	32	0
+	+	19	0
+	+	28	0
+	+	6	31
+
+> ~/Sites/lua-new/.git/COMMIT_EDITMSG
+	"	1	0
+	.	2	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/Sites/lua-new/Gemfile.lock
+	"	1	0
+
+> ~/Sites/lua-new/Gemfile
+	"	33	0
+	.	32	0
+	+	30	0
+	+	32	0
+
+> ~/Sites/lua-new/.git/rebase-merge/git-rebase-todo
+	"	1	0
+	^	180	6
+	.	180	0
+	+	81	0
+	+	82	0
+	+	83	0
+	+	84	0
+	+	85	0
+	+	86	0
+	+	87	0
+	+	88	0
+	+	89	0
+	+	90	0
+	+	91	0
+	+	92	0
+	+	93	0
+	+	94	0
+	+	95	0
+	+	96	0
+	+	97	0
+	+	98	0
+	+	99	0
+	+	100	0
+	+	101	0
+	+	102	0
+	+	103	0
+	+	104	0
+	+	105	0
+	+	106	0
+	+	107	0
+	+	108	0
+	+	109	0
+	+	110	0
+	+	111	0
+	+	112	0
+	+	113	0
+	+	114	0
+	+	115	0
+	+	116	0
+	+	117	0
+	+	118	0
+	+	119	0
+	+	120	0
+	+	121	0
+	+	122	0
+	+	123	0
+	+	124	0
+	+	125	0
+	+	126	0
+	+	127	0
+	+	128	0
+	+	129	0
+	+	130	0
+	+	131	0
+	+	132	0
+	+	133	0
+	+	134	0
+	+	135	0
+	+	136	0
+	+	137	0
+	+	138	0
+	+	139	0
+	+	140	0
+	+	141	0
+	+	142	0
+	+	143	0
+	+	144	0
+	+	145	0
+	+	146	0
+	+	147	0
+	+	148	0
+	+	149	0
+	+	150	0
+	+	151	0
+	+	152	0
+	+	154	0
+	+	153	0
+	+	155	0
+	+	156	0
+	+	157	0
+	+	158	0
+	+	159	0
+	+	160	0
+	+	161	0
+	+	162	0
+	+	163	0
+	+	165	0
+	+	164	0
+	+	166	0
+	+	167	0
+	+	168	0
+	+	169	0
+	+	170	0
+	+	171	0
+	+	172	0
+	+	173	0
+	+	174	0
+	+	175	0
+	+	176	0
+	+	177	0
+	+	178	0
+	+	179	0
+	+	180	0
+
+> ~/Sites/lua-new/app/views/conferences/show.html.haml
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Sites/lua-new/config/routes.rb
+	"	115	0
+	.	115	0
+	+	61	0
+	+	67	0
+	+	147	0
+	+	157	0
+	+	61	0
+	+	68	0
+	+	5	0
+	+	164	0
+	+	96	0
+	+	102	0
+	+	61	0
+	+	62	0
+	+	74	0
+	+	165	0
+	+	175	0
+	+	62	0
+	+	75	0
+	+	78	0
+	+	181	0
+	+	109	0
+	+	115	0
+
+> ~/Sites/lua-new/config.ru
+	"	1	0
+
+> ~/Sites/lua-new/app/views/conferences/new.html.haml
+	"	3	4
+	.	3	0
+	+	2	0
+	+	2	0
+	+	3	0
+
+> ~/Sites/lua-new/app/models/profile.rb
+	"	6	2
+	^	5	0
+	.	6	0
+	+	5	0
+	+	6	0
+	+	5	0
+	+	6	0
+	+	5	0
+	+	6	0
+
+> ~/Sites/lua-new/lib/seeds/projects.rb
+	"	78	2
+	.	78	0
+	+	61	0
+	+	78	0
+	+	61	0
+	+	78	0
+
+> ~/Sites/lua-new/lib/seeds/users.rb
+	"	27	0
+	.	27	0
+	+	8	0
+	+	26	0
+	+	8	0
+	+	27	0
+
+> ~/Sites/lua-new/app/controllers/conferences_controller.rb
+	"	56	0
+	.	13	0
+	+	13	0
+
+> ~/Sites/lua-new/Procfile.local
+	"	1	0
+
+> ~/.gitconfig
+	"	16	0
+	^	8	10
+	.	16	0
+	+	53	24
+	+	55	13
+	+	9	13
+	+	15	12
+	+	17	53
+	+	46	0
+	+	44	0
+	+	19	0
+	+	20	0
+	+	21	0
+	+	22	1
+	+	23	2
+	+	24	2
+	+	25	2
+	+	26	2
+	+	27	2
+	+	28	2
+	+	29	2
+	+	30	2
+	+	31	2
+	+	32	2
+	+	33	2
+	+	34	2
+	+	35	2
+	+	36	2
+	+	37	2
+	+	38	2
+	+	39	2
+	+	40	2
+	+	41	2
+	+	42	2
+	+	43	2
+	+	44	2
+	+	45	0
+	+	51	0
+	+	50	15
+	+	8	9
+	+	9	0
+	+	16	0
+
+> ~/Sites/lua-new/.gitignore
+	"	40	0
+
+> ~/Sites/lua-new/app/views/shared/templates/_conference_calling.html.haml
+	"	7	0
+
+> /usr/local/.git/description
+	"	1	0
 
 > ~/.viminfo
 	"	1	0
-
-> ~/.vimrc
-	"	1	0
-	^	25	5
-	.	25	4
-	+	4	0
-	+	5	0
-	+	1	1
-	+	42	0
-	+	40	0
-	+	45	0
-	+	34	16
-	+	14	13
-	+	49	0
-	+	30	0
-	+	30	0
-	+	39	13
-	+	23	11
-	+	14	0
-	+	13	11
-	+	14	24
-	+	25	14
-	+	26	9
-	+	26	11
-	+	29	19
-	+	43	21
-	+	20	12
-	+	36	0
-	+	53	0
-	+	18	14
-	+	24	0
-	+	14	7
-	+	25	4
 
 > ~/.vegas/resque_web/resque_web.url
 	"	1	0
@@ -280,52 +637,6 @@ $
 	"	1	0
 
 > ~/.bash_history
-	"	1	0
-
-> ~/.gitconfig
-	"	9	0
-	^	8	10
-	.	9	0
-	+	54	24
-	+	56	13
-	+	9	13
-	+	15	12
-	+	18	53
-	+	47	0
-	+	45	0
-	+	20	0
-	+	21	0
-	+	22	0
-	+	23	1
-	+	24	2
-	+	25	2
-	+	26	2
-	+	27	2
-	+	28	2
-	+	29	2
-	+	30	2
-	+	31	2
-	+	32	2
-	+	33	2
-	+	34	2
-	+	35	2
-	+	36	2
-	+	37	2
-	+	38	2
-	+	39	2
-	+	40	2
-	+	41	2
-	+	42	2
-	+	43	2
-	+	44	2
-	+	45	2
-	+	46	0
-	+	52	0
-	+	51	15
-	+	8	9
-	+	9	0
-
-> ~/Sites/lua-new/Gemfile
 	"	1	0
 
 > ~/Sites/lua-new/app/assets/javascripts/application/ujs/preloader.coffee

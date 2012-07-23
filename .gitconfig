@@ -13,7 +13,6 @@
 	account = personal
 [core]
 	editor = vim
-	excludesfile = ~/.gitignore
 [format]
 	pretty = %Cblue%h%Creset %Cgreen[%cr]%Creset (%an) %s
 [alias]

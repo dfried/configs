@@ -1,3 +1,4 @@
+call pathogen#infect()
 " Put all temp files in one place
 set backup
 set backupdir=~/.vim/backup
@@ -42,6 +43,8 @@ set cursorline
 filetype on
 filetype plugin indent on
 syntax enable
+set background=light
+colorscheme solarized
 set grepprg=grep\ -nH\ $*
 
 " Cool tab completion stuff
