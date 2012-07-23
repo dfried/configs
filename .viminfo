@@ -18,7 +18,9 @@ $
 
 # Command Line History (newest to oldest):
 :wq
+:set paste
 :q
+:ruby 1
 :w
 :w!
 :qw
@@ -51,42 +53,47 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-""0	CHAR	0
+"0	CHAR	0
 	" 
-"1	LINE	0
-	
+""1	LINE	0
+	let g:neocomplcache_enable_at_startup = 1
 "2	LINE	0
-	>>>>>>> 58a31ef... WIP conference calling
+	neocomplcache enable
 "3	LINE	0
 	
 "4	LINE	0
-	#gem 'twilio-ruby','~> 3.7.0',:git => 'git@github.com:dfried/twilio-ruby.git', :branch => 'master'
+	>>>>>>> 58a31ef... WIP conference calling
 "5	LINE	0
-	=======
-"6	LINE	0
-	gem 'twilio-ruby','~> 3.4.0'
-"7	LINE	0
-	<<<<<<< HEAD
-"8	LINE	0
-	WIP conference calling
-"9	LINE	0
 	
+"6	LINE	0
+	#gem 'twilio-ruby','~> 3.7.0',:git => 'git@github.com:dfried/twilio-ruby.git', :branch => 'master'
+"7	LINE	0
+	=======
+"8	LINE	0
+	gem 'twilio-ruby','~> 3.4.0'
+"9	LINE	0
+	<<<<<<< HEAD
 "-	CHAR	0
 	" 
 
 # File marks:
-'0  21  10  ~/.gitignore
-'1  27  0  ~/.gitignore
-'2  6  0  ~/.config/fish/fishd.Daniels-MacBook-Air.local
-'3  47  20  ~/.vimrc
-'4  15  3  ~/.gitignore
-'5  11  4  ~/.gitignore
-'6  1  0  ~/.vimrc
-'7  6  31  ~/Sites/lua-new/app/models/conference.rb
-'8  1  0  ~/Sites/lua-new/.git/COMMIT_EDITMSG
-'9  1  0  ~/Sites/lua-new/Gemfile.lock
+'0  1  0  ~/.vimrc
+'1  130  71  ~/.vimrc
+'2  2  19  ~/.vimrc
+'3  21  10  ~/.gitignore
+'4  27  0  ~/.gitignore
+'5  6  0  ~/.config/fish/fishd.Daniels-MacBook-Air.local
+'6  47  20  ~/.vimrc
+'7  15  3  ~/.gitignore
+'8  11  4  ~/.gitignore
+'9  6  31  ~/Sites/lua-new/app/models/conference.rb
 
 # Jumplist (newest first):
+-'  1  0  ~/.vimrc
+-'  130  71  ~/.vimrc
+-'  131  53  ~/.vimrc
+-'  3  0  ~/.vimrc
+-'  2  19  ~/.vimrc
 -'  21  10  ~/.gitignore
 -'  1  0  ~/.gitignore
 -'  27  0  ~/.gitignore
@@ -96,8 +103,6 @@ $
 -'  7  2  ~/.config/NERD_tree_1
 -'  1  0  ~/.config/NERD_tree_1
 -'  47  20  ~/.vimrc
--'  2  0  ~/.vimrc
--'  1  0  ~/.vimrc
 -'  15  3  ~/.gitignore
 -'  11  4  ~/.gitignore
 -'  6  31  ~/Sites/lua-new/app/models/conference.rb
@@ -181,13 +186,49 @@ $
 -'  23  9  ~/.gitignore
 -'  20  0  ~/.gitignore
 -'  1  0  ~/.viminfo
--'  26  4  ~/.vimrc
--'  24  11  ~/.vimrc
--'  15  1  ~/.vimrc
--'  1  0  ~/.vegas/resque_web/resque_web.url
--'  6  0  ~/.config/fish/fishd.Daniels-MacBook-Air.local
 
 # History of marks within files (newest to oldest):
+
+> ~/.vimrc
+	"	1	0
+	.	1	0
+	+	5	0
+	+	6	0
+	+	2	1
+	+	43	0
+	+	41	0
+	+	48	0
+	+	35	16
+	+	15	13
+	+	52	0
+	+	31	0
+	+	31	0
+	+	40	13
+	+	24	11
+	+	15	0
+	+	14	11
+	+	15	24
+	+	26	14
+	+	27	9
+	+	27	11
+	+	30	19
+	+	44	21
+	+	21	12
+	+	37	0
+	+	56	0
+	+	19	14
+	+	25	0
+	+	15	7
+	+	26	4
+	+	1	0
+	+	45	0
+	+	47	20
+	+	2	40
+	+	2	0
+	+	131	0
+	+	58	23
+	+	130	0
+	+	1	0
 
 > ~/.gitignore
 	"	21	10
@@ -225,42 +266,6 @@ $
 
 > ~/.config/fish/fishd.Daniels-MacBook-Air.local
 	"	6	0
-
-> ~/.vimrc
-	"	47	20
-	^	47	21
-	.	47	20
-	+	5	0
-	+	6	0
-	+	2	1
-	+	43	0
-	+	41	0
-	+	48	0
-	+	35	16
-	+	15	13
-	+	52	0
-	+	31	0
-	+	31	0
-	+	40	13
-	+	24	11
-	+	15	0
-	+	14	11
-	+	15	24
-	+	26	14
-	+	27	9
-	+	27	11
-	+	30	19
-	+	44	21
-	+	21	12
-	+	37	0
-	+	56	0
-	+	19	14
-	+	25	0
-	+	15	7
-	+	26	4
-	+	1	0
-	+	45	0
-	+	47	20
 
 > ~/Sites/lua-new/app/models/conference.rb
 	"	6	31

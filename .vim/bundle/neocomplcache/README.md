@@ -1,60 +1,71 @@
-call pathogen#infect()
-" Put all temp files in one place
-set backup
-set backupdir=~/.vim/backup
-set directory=~/.vim/tmp
+**neocomplcache**
+=================
 
-" Line numbers
-set number
+Description
+-----------
 
-set ignorecase
-set smartcase
-set nocompatible
-set showcmd
-set showmode
-set autoindent smartindent
-set mouse=a
-set incsearch
-set hlsearch
-set matchtime=5
-set nohidden
-set showmatch
-set ruler
-set more
-set autoread
+Neocomplcache performs keyword completion by making a cache of keywords in
+a buffer. I implemented it because unlike the Vim builtin keyword completion,
+neocomplcache can be customized flexibly. Unfortunately, neocomplcache may use
+more memory than other plugins.
 
-set undolevels=1000
-set ttyfast
-set noerrorbells
-set shell=bash
-set fileformats=unix
+Installation
+============
 
-set expandtab
-set smarttab
-set shiftwidth=2
-set softtabstop=2
-set scrolloff=5               " keep at least 5 lines above/below
-set sidescrolloff=5           " keep at least 5 lines left/right
+* Extract the file and put files in your Vim directory
+   (usually ~/.vim/ or Program Files/Vim/vimfiles on Windows).
+* Execute `|:NeoComplCacheEnable|` command or
+`let g:neocomplcache_enable_at_startup = 1`
+in your .vimrc.
 
-" Highlight current line
-set cursorline
+Caution
+-------
 
-" syntax highlighting
-filetype on
-filetype plugin indent on
-syntax enable
-set background=light
-colorscheme solarized
-set grepprg=grep\ -nH\ $*
+Because all variable names were changed in neocomplcache Ver.5, it is not
+backwards compatible. If you want to upgrade, you should use the following
+script from Mr.thinca.
 
-" Cool tab completion stuff
-set wildmenu
-set wildmode=list:longest,full
+http://gist.github.com/422503
 
-"Correct cursor motion with wrapped lines
-inoremap <Down> <C-o>gj
-inoremap <Up> <C-o>gk
+Snippets feature(snippets\_complete source) was splitted from Ver.7.
+If you used it, please install snippets\_complete source manually.
 
+https://github.com/Shougo/neocomplcache-snippets-complete
+
+Screen shots
+============
+
+Quick match
+-----------
+![Quick match.](http://3.bp.blogspot.com/_ci2yBnqzJgM/TD1PeahCmOI/AAAAAAAAADc/Rz_Pbpr92z4/s1600/quick_match.png)
+
+Snippet completion like snipMate.
+---------------------------------
+![Snippet completion like snipMate.](http://s14.postimage.org/6m073xpwh/Screenshot2.png)
+
+Original filename completion.
+-----------
+![Original filename completion.](http://1.bp.blogspot.com/_ci2yBnqzJgM/TD1O5_bOQ2I/AAAAAAAAADE/vHf9Xg_mrTI/s1600/filename_complete.png)
+
+Register completion.
+-----------
+![Register completion.](http://1.bp.blogspot.com/_ci2yBnqzJgM/TD1Pel4fomI/AAAAAAAAADk/YsAxF8i6r3w/s1600/register_complete.png)
+
+Omni completion.
+----------------
+![Omni completion.](http://2.bp.blogspot.com/_ci2yBnqzJgM/TD1PTolkTBI/AAAAAAAAADU/knJ3eniuHWI/s1600/omni_complete.png)
+
+Completion with vimshell(http://github.com/Shougo/vimshell).
+------------------------------------------------------------
+![Completion with vimshell(http://github.com/Shougo/vimshell).](http://1.bp.blogspot.com/_ci2yBnqzJgM/TD1PLfdQrwI/AAAAAAAAADM/2pSFRTHwYOY/s1600/neocomplcache_with_vimshell.png)
+
+Vim completion
+------------------------------------------------------------
+![Vim completion.](http://1.bp.blogspot.com/_ci2yBnqzJgM/TD1PfKTlwnI/AAAAAAAAADs/nOGWTRLuae8/s1600/vim_complete.png)
+
+Setting examples
+
+```vim
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
 " Use neocomplcache.
@@ -128,3 +139,4 @@ let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
 let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
 let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
+```
